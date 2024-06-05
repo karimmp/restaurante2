@@ -289,7 +289,19 @@ footer {
     .filter-select {
         display: block; /* Muestra el menú desplegable en dispositivos móviles */
     }
-
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #ff6b35;
+        padding: 20px;
+      }
+    
+      .nav-menu.show {
+        display: block;
+      }
 }
 @media (min-width: 769px) {
     .filter-select {

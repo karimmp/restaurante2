@@ -86,24 +86,26 @@ const dishes = [
   },
 ];
 
-// Función para generar las tarjetas de los platillos
-/* function createDishCards(dishes) {
-  const menuItemsContainer = document.querySelector(".menu-items");
-  menuItemsContainer.innerHTML = "";
+// Seleccionamos los elementos necesarios
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const navMenu = document.querySelector('.nav-menu');
 
-  dishes.forEach((dish) => {
-    const card = document.createElement("div");
-    card.classList.add("menu-item");
-    card.innerHTML = `
-        <img src="${dish.imageUrl}" alt="${dish.name}">
-        <h3>${dish.name}</h3>
-        <p>Tipo: ${dish.type}</p>
-        <p class="price">$${dish.price}</p>
-        <p class="ingredients">Ingredientes: ${dish.ingredients}</p>
-      `;
-    menuItemsContainer.appendChild(card);
-  });
-} */
+// Función para alternar la visibilidad del menú de navegación
+function toggleNavMenu() {
+  navMenu.classList.toggle('show');
+}
+
+// Evento clic en el menú de hamburguesa
+hamburgerMenu.addEventListener('click', toggleNavMenu);
+
+// Cerrar el menú de navegación al hacer clic fuera de él
+window.addEventListener('click', function(e) {
+  if (!e.target.closest('.nav-menu') && !e.target.closest('.hamburger-menu')) {
+    navMenu.classList.remove('show');
+  }
+});
+
+// Función para generar las tarjetas de los platillos
 function createDishCards(dishes) {
     const menuItemsContainer = document.querySelector('.menu-items');
     menuItemsContainer.innerHTML = '';

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#"><img src="https://img.freepik.com/vector-premium/logo-restaurante-retro_23-2148474404.jpg" alt="Logo Restaurante"></a>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Menú</a></li>
+                    <li><a href="#">Reservar</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+       <section class="filter-section">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Todo</button>
+                <button class="filter-btn" data-filter="desayunos">Desayunos</button>
+                <button class="filter-btn" data-filter="comidas">Comidas</button>
+                <button class="filter-btn" data-filter="cenas">Cenas</button>
+                <button class="filter-btn" data-filter="hamburguesas">Hamburguesas</button>
+                <button class="filter-btn" data-filter="pizzas">Pizzas</button>
+                <button class="filter-btn" data-filter="bebidas">Bebidas</button>
+                <button class="filter-btn" data-filter="postres">Postres</button>
+            </div>
+            <select class="filter-select">
+                <option value="all">Todo</option>
+                <option value="desayunos">Desayunos</option>
+                <option value="comidas">Comidas</option>
+                <option value="cenas">Cenas</option>
+                <option value="hamburguesas">Hamburguesas</option>
+                <option value="pizzas">Pizzas</option>
+                <option value="bebidas">Bebidas</option>
+                <option value="postres">Postres</option>
+            </select>
+        </section>
+
+        <section class="menu-section">
+            <div class="menu-items">
+                <!-- Aquí se insertarán las tarjetas de los platillos -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Reservar</h3>
+                <p>¡Reserva tu mesa ahora!</p>
+                <a href="#" class="btn">Reservar</a>
+            </div>
+            <div class="footer-section">
+                <h3>Ubicación</h3>
+                <p>123 Calle Principal</p>
+                <p>Ciudad, Estado 12345</p>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Restaurante Pizzas y Hamburguesas. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
